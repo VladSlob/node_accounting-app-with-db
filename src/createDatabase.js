@@ -13,10 +13,7 @@ const createDatabase = async () => {
   const sequelize = new Sequelize({
     database: 'postgres',
     username: POSTGRES_USER || 'postgres',
-    host: POSTGRES_HOST || 'localhost',
-    dialect: 'postgres',
-    port: Number(POSTGRES_PORT) || 5432,
-    password: POSTGRES_PASSWORD || '123',
+
   });
 
   try {
