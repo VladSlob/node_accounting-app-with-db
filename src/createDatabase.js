@@ -10,11 +10,7 @@ const { POSTGRES_HOST, POSTGRES_PORT, POSTGRES_USER, POSTGRES_PASSWORD } =
 
 const createDatabase = async () => {
   // Connect to default postgres database first
-  const sequelize = new Sequelize({
-    database: 'postgres',
-    username: POSTGRES_USER || 'postgres',
 
-  });
 
   try {
     await sequelize.authenticate();
